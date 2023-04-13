@@ -41,9 +41,7 @@ public class ReassembleText {
      * @return {@link List<String>}
      */
     private static List<String> splitValues(String fragment) {
-        return Arrays.stream(fragment.split(SEPARATOR))
-                .map(String::trim)
-                .collect(Collectors.toList());
+        return Arrays.stream(fragment.split(SEPARATOR)).collect(Collectors.toList());
     }
 
     /**
